@@ -1,0 +1,113 @@
+\documentclass[aspectratio=169, xcolor=dvipsnames]{beamer}
+
+% ---------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% ---------------------------------------------------------
+
+\usepackage{appendixnumberbeamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\addtobeamertemplate{footline}{%
+	\hspace*{\fill}%
+	\llap{%
+		\insertframenumber\,/\,\inserttotalframenumber%
+		\hspace{5pt}%
+	}
+	\vskip4pt%
+}
+
+\AtBeginSection[]{
+	\begin{frame}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+% ---------------------------------------------------------
+
+\usepackage{xcolor}
+
+\usepackage{graphicx}
+
+\usepackage{changepage}
+
+\usepackage{fontawesome}
+
+\usepackage{dirtree}
+
+\usepackage{subcaption}
+
+% ---------------------------------------------------------
+
+\usepackage{tikz}
+
+\usetikzlibrary{arrows.meta}
+
+% ---------------------------------------------------------
+
+\usepackage{minted}
+
+\DeclareUnicodeCharacter{3B9}{$\iota$}
+\DeclareUnicodeCharacter{2200}{$\forall$}
+\DeclareUnicodeCharacter{2203}{$\exists$}
+\DeclareUnicodeCharacter{2260}{$\neq$}
+\DeclareUnicodeCharacter{3A3}{$\Sigma$}
+\DeclareUnicodeCharacter{2217}{$\ast$}
+\DeclareUnicodeCharacter{231C}{$\ulcorner$}
+\DeclareUnicodeCharacter{231D}{$\urcorner$}
+
+% ---------------------------------------------------------
+
+\usepackage{amsmath}
+
+\usepackage{mathtools}
+
+% ---------------------------------------------------------
+
+\usepackage{overtools}
+
+\usepackage{macros}
+
+% ---------------------------------------------------------
+
+\title{
+  Implementing the \raisebox{-0.2cm}{\includegraphics[scale=0.3]{images/iris.png}} masterplan: \OCaml
+}
+\author{
+  Clément Allain
+}
+
+% ---------------------------------------------------------
+% ---------------------------------------------------------
+
+\begin{document}
+
+% ---------------------------------------------------------
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+% ---------------------------------------------------------
+
+\input{introduction}
+\input{masterplan}
+\input{zoo}
+\input{kcas}
+\input{future}
+
+% ---------------------------------------------------------
+
+\begin{frame}[plain, noframenumbering]
+\centering
+\huge
+Thank you for your attention!
+\end{frame}
+
+% ---------------------------------------------------------
+
+\end{document}
